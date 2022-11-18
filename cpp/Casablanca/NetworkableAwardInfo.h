@@ -1,0 +1,11 @@
+// Object: NetworkableAwardInfo
+// RuntimeId: 64807
+// TypeInfo: 0x0000000144C34350
+#pragma pack(push, 8)
+namespace Casablanca {
+    struct NetworkableAwardInfo {
+        char pad_0x0[0x28];
+    }; // 0x28
+    static_assert(sizeof(NetworkableAwardInfo) == 0x28);
+}
+#pragma pack(pop)

@@ -1,0 +1,44 @@
+// Object: GameplayBones
+// RuntimeId: 57767
+// TypeInfo: 0x0000000144EE2D00
+
+namespace Entity {
+    enum GameplayBones {
+        GameplayBones_UndefinedBone = 65535,
+        GameplayBones_RootBone = 0,
+        GameplayBones_RootMeshBone = 1,
+        GameplayBones_ConnectBone = 2,
+        GameplayBones_HeadBone = 3,
+        GameplayBones_CameraBone = 4,
+        GameplayBones_AimBone = 5,
+        GameplayBones_WeaponBone = 6,
+        GameplayBones_WeaponBone2 = 7,
+        GameplayBones_WeaponAux1Bone = 8,
+        GameplayBones_LeftArmBone = 9,
+        GameplayBones_LeftToeBone = 10,
+        GameplayBones_RightToeBone = 11,
+        GameplayBones_RightArmBone = 12,
+        GameplayBones_SpineBone = 13,
+        GameplayBones_WeaponMuzzleBone = 14,
+        GameplayBones_WeaponShellEjectBone = 15,
+        GameplayBones_LeftHandBone = 16,
+        GameplayBones_RightHandBone = 17,
+        GameplayBones_LeftFootBone = 18,
+        GameplayBones_RightFootBone = 19,
+        GameplayBones_BackPack = 20,
+        GameplayBones_WeaponAttachBone = 21,
+        GameplayBones_LeftKneeBone = 22,
+        GameplayBones_RightKneeBone = 23,
+        GameplayBones_LeftThighBone = 24,
+        GameplayBones_RightThighBone = 25,
+        GameplayBones_LeftUpperArmBone = 26,
+        GameplayBones_RightUpperArmBone = 27,
+        GameplayBones_HipBone = 28,
+        GameplayBones_ChestBone = 29,
+        GameplayBones_LeftForeArmBone = 30,
+        GameplayBones_RightForeArmBone = 31,
+        GameplayBones_LeftShoulderBone = 32,
+        GameplayBones_RightShoulderBone = 33,
+        GameplayBones_Count = 34
+    };
+}

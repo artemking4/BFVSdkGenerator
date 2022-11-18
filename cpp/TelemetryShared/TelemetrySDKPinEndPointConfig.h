@@ -1,0 +1,11 @@
+// Object: TelemetrySDKPinEndPointConfig
+// RuntimeId: 4143
+// TypeInfo: 0x0000000144F5E410
+#pragma pack(push, 8)
+namespace TelemetryShared {
+    struct TelemetrySDKPinEndPointConfig {
+        char pad_0x0[0x18];
+    }; // 0x18
+    static_assert(sizeof(TelemetrySDKPinEndPointConfig) == 0x18);
+}
+#pragma pack(pop)

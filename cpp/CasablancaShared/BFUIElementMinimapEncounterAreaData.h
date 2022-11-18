@@ -1,0 +1,23 @@
+// Object: BFUIElementMinimapEncounterAreaData
+// ClassId: 3656
+// RuntimeId: 11363
+// TypeInfo: 0x0000000144D96F90
+#include "../CasablancaShared/BFUIElementEntityData.h"
+#include "../CasablancaShared/BFUIMinimapWorldViewAsset.h"
+#include "../Global/Boolean.h"
+#include "../GameShared/UIBlendMode.h"
+#include "../Global/Float32.h"
+
+#pragma pack(push, 16)
+namespace CasablancaShared {
+    class BFUIElementMinimapEncounterAreaData : public CasablancaShared::BFUIElementEntityData {
+        CasablancaShared::BFUIMinimapWorldViewAsset MinimapWorldViewAsset; // 0x130
+        GameShared::UIBlendMode BlendMode; // 0x138
+        Float32 AntiAliasingWidth; // 0x13C
+        Float32 BevelWorldWidth; // 0x140
+        Boolean OverrideBlendMode; // 0x144
+        char pad_0x145[0xB];
+    }; // 0x150
+    static_assert(sizeof(BFUIElementMinimapEncounterAreaData) == 0x150);
+}
+#pragma pack(pop)

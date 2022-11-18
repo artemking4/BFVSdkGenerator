@@ -1,0 +1,39 @@
+// Object: UIIconState
+// RuntimeId: 6164
+// TypeInfo: 0x0000000144D1DBE0
+
+namespace CasablancaShared {
+    enum UIIconState {
+        UIIconState_Neutral = 0,
+        UIIconState_Friendly = 1,
+        UIIconState_Enemy = 2,
+        UIIconState_Squad = 3,
+        UIIconState_Self = 4,
+        UIIconState_Team1 = 5,
+        UIIconState_Team2 = 6,
+        UIIconState_Team3 = 7,
+        UIIconState_Team4 = 8,
+        UIIconState_Commander = 9,
+        UIIconState_Spectator = 10,
+        UIIconState_Accent = 11,
+        UIIconState_Default = 12,
+        UIIconState_SquadMemberName = 13,
+        UIIconState_TeamMemberName = 14,
+        UIIconState_EnemyPlayerName = 15,
+        UIIconState_Admin = 16,
+        UIIconState_Commorose = 17,
+        UIIconState_Foreground = 18,
+        UIIconState_Caution = 19,
+        UIIconState_Rarity1 = 20,
+        UIIconState_Rarity2 = 21,
+        UIIconState_Rarity3 = 22,
+        UIIconState_Rarity4 = 23,
+        UIIconState_Rarity5 = 24,
+        UIIconState_SquadMember1 = 25,
+        UIIconState_SquadMember2 = 26,
+        UIIconState_SquadMember3 = 27,
+        UIIconState_SquadMember4 = 28,
+        UIIconState_SquadMember5 = 29,
+        UIIconState_Count = 30
+    };
+}

@@ -1,0 +1,40 @@
+// Object: ImpulseResponseBlockSize
+// RuntimeId: 27219
+// TypeInfo: 0x0000000144E1E900
+
+namespace Audio {
+    enum ImpulseResponseBlockSize {
+        ImpulseResponseBlockSize_256 = 256,
+        ImpulseResponseBlockSize_512 = 512,
+        ImpulseResponseBlockSize_768 = 768,
+        ImpulseResponseBlockSize_1024 = 1024,
+        ImpulseResponseBlockSize_1280 = 1280,
+        ImpulseResponseBlockSize_1536 = 1536,
+        ImpulseResponseBlockSize_1792 = 1792,
+        ImpulseResponseBlockSize_2048 = 2048,
+        ImpulseResponseBlockSize_2304 = 2304,
+        ImpulseResponseBlockSize_2560 = 2560,
+        ImpulseResponseBlockSize_2816 = 2816,
+        ImpulseResponseBlockSize_3072 = 3072,
+        ImpulseResponseBlockSize_3328 = 3328,
+        ImpulseResponseBlockSize_3584 = 3584,
+        ImpulseResponseBlockSize_3840 = 3840,
+        ImpulseResponseBlockSize_4096 = 4096,
+        ImpulseResponseBlockSize_4352 = 4352,
+        ImpulseResponseBlockSize_4608 = 4608,
+        ImpulseResponseBlockSize_4864 = 4864,
+        ImpulseResponseBlockSize_5120 = 5120,
+        ImpulseResponseBlockSize_5376 = 5376,
+        ImpulseResponseBlockSize_5632 = 5632,
+        ImpulseResponseBlockSize_5888 = 5888,
+        ImpulseResponseBlockSize_6144 = 6144,
+        ImpulseResponseBlockSize_6400 = 6400,
+        ImpulseResponseBlockSize_6656 = 6656,
+        ImpulseResponseBlockSize_6912 = 6912,
+        ImpulseResponseBlockSize_7168 = 7168,
+        ImpulseResponseBlockSize_7424 = 7424,
+        ImpulseResponseBlockSize_7680 = 7680,
+        ImpulseResponseBlockSize_7936 = 7936,
+        ImpulseResponseBlockSize_8192 = 8192
+    };
+}

@@ -1,0 +1,51 @@
+// Object: WeaponClassEnum
+// RuntimeId: 50783
+// TypeInfo: 0x0000000144F42000
+
+namespace SoldierShared {
+    enum WeaponClassEnum {
+        wc12gauge = 0,
+        wc338Magnum = 1,
+        wc357Magnum = 2,
+        wc44Magnum = 3,
+        wc45cal = 4,
+        wc46x30mm = 5,
+        wc50cal = 6,
+        wc545x45mmWP = 7,
+        wc556x45mmNATO = 8,
+        wc57x28mm = 9,
+        wc58x42mm = 10,
+        wc762x39mmWP = 11,
+        wc762x51mmNATO = 12,
+        wc762x54mmR = 13,
+        wc9x19mm = 14,
+        wc9x39mm = 15,
+        wcAssault = 16,
+        wcShotgun = 17,
+        wcSmg = 18,
+        wcLmg = 19,
+        wcSniper = 20,
+        wcUgl = 21,
+        wcHgr = 22,
+        wcAt = 23,
+        wcATMine = 24,
+        wcC4 = 25,
+        wcAutoInjector = 26,
+        wcKnife = 27,
+        wcBuff = 28,
+        wcLaserDesignator = 29,
+        wcLaserPainter = 30,
+        wcMedKit = 31,
+        wcMortarStrike = 32,
+        wcPowerTool = 33,
+        wcTracerDart = 34,
+        wcRadioBeacon = 35,
+        wcEodBot = 36,
+        wcReconMav = 37,
+        wcUGS = 38,
+        wcUnarmed = 39,
+        wcAmmoCrate = 40,
+        wcCount = 41,
+        wcNone = 42
+    };
+}

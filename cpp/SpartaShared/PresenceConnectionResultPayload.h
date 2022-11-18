@@ -1,0 +1,41 @@
+// Object: PresenceConnectionResultPayload
+// RuntimeId: 14566
+// TypeInfo: 0x0000000144F4F4F0
+
+namespace SpartaShared {
+    enum PresenceConnectionResultPayload {
+        PresenceConnectionResult_Success = 0,
+        PresenceConnectionResult_Failure = 1,
+        PresenceConnectionResult_ConnectionFailed = 2,
+        PresenceConnectionResult_Timeout = 3,
+        PresenceConnectionResult_ServerDisconnect = 4,
+        PresenceConnectionResult_NetworkDisconnect = 5,
+        PresenceConnectionResult_NetworkError = 6,
+        PresenceConnectionResult_SystemError = 7,
+        PresenceConnectionResult_NoService = 8,
+        PresenceConnectionResult_InvalidTrialUser = 9,
+        PresenceConnectionResult_InvalidUser = 10,
+        PresenceConnectionResult_UserLost = 11,
+        PresenceConnectionResult_DuplicateLogin = 12,
+        PresenceConnectionResult_NeedUserInteraction = 13,
+        PresenceConnectionResult_UserProfileUnavailable = 14,
+        PresenceConnectionResult_UserNotLoggedIn = 15,
+        PresenceConnectionResult_TooYoung = 16,
+        PresenceConnectionResult_TooYoungForContent = 17,
+        PresenceConnectionResult_NoMultiplayerPrivilege = 18,
+        PresenceConnectionResult_MissingOnlineAccess = 19,
+        PresenceConnectionResult_RequiredUpdateExists = 20,
+        PresenceConnectionResult_AuthCodeFailed = 21,
+        PresenceConnectionResult_ServerNotFound = 22,
+        PresenceConnectionResult_ServerConfiguration = 23,
+        PresenceConnectionResult_OriginOffline = 24,
+        PresenceConnectionResult_OriginStartupFailed = 25,
+        PresenceConnectionResult_OriginMandatoryUpdateNeeded = 26,
+        PresenceConnectionResult_LoginCancelled = 27,
+        PresenceConnectionResult_AccountBanned = 28,
+        PresenceConnectionResult_PsuLimitExceeded = 29,
+        PresenceConnectionResult_GameClientVersionMissmatch = 30,
+        PresenceConnectionResult_SpartaMandatoryUpdateNeeded = 31,
+        PresenceConnectionResult_IncorrectValue = 32
+    };
+}

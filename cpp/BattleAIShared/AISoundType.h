@@ -1,0 +1,51 @@
+// Object: AISoundType
+// RuntimeId: 37326
+// TypeInfo: 0x0000000144C049F0
+
+namespace BattleAIShared {
+    enum AISoundType {
+        AISoundType_Invalid = 0,
+        AISoundType_None = 1,
+        AISoundType_Gunshot = 2,
+        AISoundType_Impact = 3,
+        AISoundType_MeleeImpact = 4,
+        AISoundType_BodyImpact = 5,
+        AISoundType_BodyImpactSilenced = 6,
+        AISoundType_Background = 7,
+        AISoundType_Distraction = 8,
+        AISoundType_Pain = 9,
+        AISoundType_Death = 10,
+        AISoundType_DeathSilent = 11,
+        AISoundType_Footstep = 12,
+        AISoundType_Body = 13,
+        AISoundType_FallImpact = 14,
+        AISoundType_Explosion = 15,
+        AISoundType_BrokenByShot = 16,
+        AISoundType_FootstepQuiet = 17,
+        AISoundType_Vehicle = 18,
+        AISoundType_GunshotSilenced = 19,
+        AISoundType_Noise = 20,
+        AISoundType_VehicleQuiet = 21,
+        AISoundType_Lure = 22,
+        AISoundType_Callout_StationaryInvestigate = 23,
+        AISoundType_Callout_Investigate = 24,
+        AISoundType_Callout_UrgentInvestigate = 25,
+        AISoundType_Callout_CombatInvestigate = 26,
+        AISoundType_Callout_SearchArea = 27,
+        AISoundType_Callout_Anxious = 28,
+        AISoundType_Callout_GoingAlert = 29,
+        AISoundType_Alarm = 30,
+        AISoundType_ToolUse = 31,
+        AISoundType_Skiing_Slow = 32,
+        AISoundType_Skiing_Fast = 33,
+        AISoundType_FootstepCrouch = 34,
+        AISoundType_FootstepCrouchQuiet = 35,
+        AISoundType_Generic_1 = 36,
+        AISoundType_Generic_2 = 37,
+        AISoundType_Generic_3 = 38,
+        AISoundType_Generic_4 = 39,
+        AISoundType_Generic_5 = 40,
+        AISoundType_Talking = 41,
+        AISoundType_MaxTypes = 42
+    };
+}

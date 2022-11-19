@@ -14,37 +14,6 @@ do
         return pathJoin("cpp", getHeaderPath(obj))
     end
 
-    local function getArrayElementType(type)
-        local ftn = data[type].info.typename
-        if ftn == "Array" or ftn == "FixedArray" then 
-            type = getArrayElementType(data[type].info.arrayTypeInfo)
-        end
-
-        return type
-    end
-
-    local function getDependencies(obj)
-        local deps = { }
-        
-        local function insert(dep)
-            for k,v in ipairs(deps) do
-                if v == dep then return end
-            end
-
-            table.insert(deps, dep)
-        end 
-
-        if obj.superClass then 
-            insert(obj.superClass)
-        end
-
-        for k,v in ipairs(obj.info.fields or { }) do
-            insert(getArrayElementType(v.type))
-        end
-
-        return deps
-    end
-
     local function getTypeName(type)
         local ftn = data[type].info.typename
         if ftn == "Array" or ftn == "FixedArray" then 
@@ -56,38 +25,6 @@ do
         end
 
         return data[type].info.name
-    end
-
-    ---@param class DumpTypeInfo
-    local function populateFields(class)
-        local fields = class.info.fields or { }
-
-        table.sort(fields, function(f1, f2)
-            return f1.offset < f2.offset
-        end)
-
-        local output = { }
-        for i = 1, #fields + 1 do 
-            local pf = fields[i - 1]
-            local f = fields[i]
-            local pe = 
-                pf and (pf.offset + data:getTypeSize(pf.type)) 
-                or (class.superClass and data[class.superClass].info.totalSize)
-                or 0
-            local ns = f and f.offset or class.info.totalSize
-
-            if ns ~= pe then 
-                table.insert(output, {
-                    pad = true,
-                    offset = pe,
-                    size = ns - pe
-                })
-            end
-
-            table.insert(output, f)
-        end
-
-        return output
     end
     
     ---@param obj DumpTypeInfo
@@ -106,7 +43,7 @@ do
         out("// TypeInfo: %s", obj.typeinfo)
 
         local hasIncludes = false
-        for k,v in ipairs(getDependencies(obj)) do 
+        for k,v in ipairs(data:getDependencies(obj)) do 
             hasIncludes = true
             out('#include "../%s"', getHeaderPath(data[v]))
         end
@@ -126,13 +63,13 @@ do
         end
 
         out("namespace %s {", obj.info.module)
-        if not obj.superClass then
+        if not obj.superClass or obj.index + 1 == obj.superClass then
             out("    %s %s {", type, obj.info.name)
         else
             out("    %s %s : public %s {", type, obj.info.name, getTypeName(obj.superClass))
         end
 
-        for k,v in ipairs(populateFields(obj)) do
+        for k,v in ipairs(data:populateObjectFields(obj)) do
             if v.pad then
                 out("        char pad_0x%X[0x%X];", v.offset, v.size)
             else
